@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradient animation for QuoteForm */
+@keyframes gradient-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glow-gradient {
+  background: linear-gradient(90deg, rgba(99,102,241,0.9), rgba(236,72,153,0.9), rgba(16,185,129,0.9));
+  background-size: 300% 300%;
+  animation: gradient-glow 6s ease infinite;
+}
